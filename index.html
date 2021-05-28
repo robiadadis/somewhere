@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somewhere...</title>
+    <link rel="shortcut icon" href="heart.png">
+    <script language="javascript">
+        var nama = prompt("ur name :)", "");
+        document.write("<center><h2>Hi "+ nama +" !</h2></center>");
+        function playUwu()
+        {
+			var audio = document.getElementById("myAudio"); 
+			audio.volume = 1;
+			audio.play();
+            var video = document.getElementById("myVideo");
+            video.play();
+		}
+    </script>
+</head>
+<body>
+    <center><div>
+        <h3>How's your days? hope everything's fine :)</h3>
+        <h3>//</h3>
+        <br>
+        <p>Coded by iyd404.</p>
+    </div></center>
+    <br>
+    
+    <div id="tombol">
+        <form method="post">
+        <center><input id="tombol" type="button" value="Click me!" onclick="playUwu()"></center>
+        </form>
+    </div>
+    <br>
+    <audio id="myAudio" loop="true">
+        <source src="tothebone.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="videoanj">
+    <center><video id="myVideo" hidden muted height="80%" width="80%">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video></center>
+    </div>
+</body>
+</html>
